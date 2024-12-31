@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Dawid Bakowski} \\ \vspace{1pt}
+    \small \underline{+49 178 729 7130} $|$
+    \href{https://www.linkedin.com/in/dawidbakowski/}{\underline{linkedin.com/in/dawidbakowski}} $|$
+    \href{https://www.dawidbakowski.com/}{\underline{dawidbakowski.com}} $|$
+    \href{mailto:dave.bakowski@gmail.com}{\underline{dave.bakowski@gmail.com}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {MHP - A Porsche Company}{Düsseldorf, Germany}
+      {Cloud Solution Engineer Working Student}{Oct 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Designed cloud cost reduction system scanning 10,000 resources, automating cleanup and saving costs}
+        \resumeItem{Created automated device management solution facilitating Windows migration for 5,000 enterprise users}
+        \resumeItem{Provided for over 100 developers remote, self-service VM restart capabilities via a web interface}
+        \resumeItem{Engineered keyvault management system handling access control for 200 app registrations}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Microsoft}{Cologne, Germany}
+      {Cloud Solution Architect Working Student}{Dec 2022 -- May 2023}
+      \resumeItemListStart
+        \resumeItem{Conducted in-depth research on potential AI \& OpenAI applications across 2 key sectors: banking and insurance}
+        \resumeItem{Led 6 bi-weekly team learning sessions, upskilling the team on Microsoft cloud technologies for 15 team members}
+        \resumeItem{Delivered technical presentation to over 1,000 of people showcasing Azure OpenAI and ChatGPT capabilities}
+        \resumeItem{Automated critical reporting workflows to highlight technical gaps for over 5 major product groups}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Masterplan}{Düsseldorf, Germany}
+      {Information \& Process Manager Working Student}{Jan 2022 -- Nov 2022}
+      \resumeItemListStart
+        \resumeItem{Facilitated cross-functional communication between 5 key departments in a startup with over 100 employees}
+        \resumeItem{Developed a technical battle card outlining over 8 key cybersecurity and cloud measures for staff/customer use}
+        \resumeItem{Rolled out a new data deletion plan company-wide, targeting a 20\% reduction in data retention risk}
+        \resumeItem{Created a technical FAQ covering 5 domains for enhanced customer and internal support}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------LEADERSHIP-----------
+\section{Leadership}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Heinrich Heine Consulting}{Düsseldorf, Germany}
+      {Head of IT}{Jul 2022 -- Sep 2023}
+      \resumeItemListStart
+        \resumeItem{Served on the extended board, contributing to strategic decision-making for an 90+ member organization}
+        \resumeItem{Led IT strategic planning with a team of 8 students, achieving departmental improvements}
+        \resumeItem{Successfully resolved a critical IT incident, minimizing downtime and restoring 80\% system functionality}
+        \resumeItem{Provided actionable advice and career guidance on tech internships through a podcast reaching over 1,000 listeners}
+        \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Cologne}{Cologne, Germany}
+      {B.Sc. in Information Systems; Expected Grade: 2.5}{Oct 2019 - Sep 2025}
+  \resumeSubHeadingListEnd
+
+  
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{dawidbakowski.com} {}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a personal web application, using Next.js and TypeScript to showcase experiences, projects, and blogs}
+            \resumeItem{Implemented performance optimizations and interactive UI features}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{EasyFind} {}}{}
+          \resumeItemListStart
+            \resumeItem{Created comprehensive system design incorporating AR and indoor positioning technology}
+            \resumeItem{Developed technical documentation and implementation roadmap for enterprise retail solution}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Sandbox} {}}{}
+          \resumeItemListStart
+            \resumeItem{Formulated system requirements and mobile UI prototypes for real-time consumption tracking}
+            \resumeItem{Designed layered Azure architecture for IoT-based home energy monitoring system}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills and Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Technical Skills}{: Java, TypeScript, HTML/CSS, PowerShell, R, SQL} \\
+     \textbf{Other Tools}{: Azure, Vercel, Git, Linux, Docker, D3.JS} \\
+     \textbf{Certifications}{: AZ-900, AI-900, SC-900, DP-900} \\
+     \textbf{Languages}{: German, Polish (native), English (fluent), Spanish (B1)} \\
+     \textbf{Interests}{: Basketball, Chess, Reading, Traveling}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
